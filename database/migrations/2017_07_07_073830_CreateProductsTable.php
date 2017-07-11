@@ -20,15 +20,7 @@ class CreateProductsTable extends Migration
             $table->integer('quantity');
             $table->timestamps();
         });
-    }
-
-    Schema::create('products', function (Blueprint $table) {
-    $table->increments('id');
-    $table->string('name', 255);
-    $table->float('price');
-    $table->text('description');
-    $table->timestamps();
-});
+    } 
     /**
      * Reverse the migrations.
      *
